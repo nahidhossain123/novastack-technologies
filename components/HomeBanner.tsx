@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 const HomeBanner = () => {
     const router = useRouter()
     return (
-        <div className="h-full flex flex-wrap md:flex-nowrap justify-end items-center container">
+        <div className="h-screen flex flex-wrap md:flex-nowrap justify-end items-center container">
             <div className="w-full text-center md:text-start md:max-w-[450px] xl:max-w-[650px]">
                 <div className="space-y-5 md:space-y-10">
                     <h1 className='text-primary-200 text-4xl md:text-4xl xl:text-6xl font-bold'>Trusted Effective Service and Solutions</h1>

@@ -44,7 +44,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute w-full bg-primary-100 md:bg-white px-5 py-2">
+            <div className="absolute w-full bg-primary-100 md:bg-white px-5 py-2 z-10">
                 <div className="flex justify-between items-center py-4">
                     <div className="">
                         <a className="inline-block font-extrabold hover:text-hover-100 hover:scale-105 transition-transform duration-200 italic text-white md:text-primary-200" href="/">

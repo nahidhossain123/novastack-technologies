@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 const HeroSection = ({ children }) => {
     const router = useRouter();
     return (
-        <section className="bg-secondary-100 h-screen ">
+        <section className="bg-secondary-100 h-full relative">
             <div className='h-full flex justify-center items-center'>
                 {children}
             </div>
