@@ -68,3 +68,35 @@ export const testimonials = [
     avatar: "https://randomuser.me/api/portraits/men/4.jpg",
   },
 ];
+
+ 
+export const teamMembers = [
+    { 
+        id: 1, 
+        name: "Anya Sharma", 
+        title: "Chief Executive Officer", 
+        image: "https://randomuser.me/api/portraits/men/32.jpg",
+        linkedin: "#"
+    },
+    { 
+        id: 2, 
+        name: "Michael Chen", 
+        title: "Lead Software Architect", 
+        image: "https://randomuser.me/api/portraits/women/44.jpg",
+        linkedin: "#"
+    },
+    { 
+        id: 3, 
+        name: "David Rodriguez", 
+        title: "Head of Design (UX/UI)", 
+        image: "https://randomuser.me/api/portraits/men/50.jpg",
+        linkedin: "#"
+    },
+    { 
+        id: 4, 
+        name: "Priya Singh", 
+        title: "Marketing Director", 
+        image: "https://randomuser.me/api/portraits/women/61.jpg",
+        linkedin: "#"
+    },
+];

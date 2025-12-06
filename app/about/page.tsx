@@ -1,5 +1,6 @@
 import CompanyOverview from '@/components/CompanyOverview'
 import HeroSection from '@/components/HeroSection'
+import TeamsSection from '@/components/TeamsSection'
 import React from 'react'
 
 const page = () => {
@@ -19,6 +20,7 @@ const page = () => {
                 </div>
             </HeroSection>
             <CompanyOverview />
+            <TeamsSection />
         </div>
     )
 }
