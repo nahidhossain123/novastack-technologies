@@ -8,7 +8,7 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 const Header = () => {
     return (
         <header className=''>
-            <div className="bg-primary px-5 py-1">
+            <div className="bg-primary-200 px-5 py-1">
                 <div className="">
                     <div className="flex justify-between items-center">
                         <div className="">
@@ -42,7 +42,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="px-5 py-2">
+            <div className="absolute w-full bg-white px-5 py-2">
                 <div className="flex justify-between items-center py-4">
                     <div className="">
                         <a className="inline-block font-bold hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/">

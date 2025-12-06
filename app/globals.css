@@ -5,6 +5,7 @@
   --foreground: #171717;
   --primary-100: #66BB6A;
   --primary-200: #4CAF50;
+  --secondary-100: #E9F8FF;
   --primaryHover:#70a1ff;
 }
 
@@ -13,9 +14,48 @@
   --color-foreground: var(--foreground);
   --color-primary-100: var(--primary-100);
   --color-primary-200: var(--primary-200);
+  --color-secondary-100: var(--secondary-100);
   --color-hover-100: var(--primaryHover);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+ --animate-move:move 15s linear infinite;
+  @keyframes move {
+     0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    20% {
+        transform: translate(73px, -1px) rotate(36deg);
+    }
+    40% {
+        transform: translate(141px, 72px) rotate(72deg);
+    }
+    60% {
+        transform: translate(83px, 122px) rotate(108deg);
+    }
+    80% {
+        transform: translate(-40px, 72px) rotate(144deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+  }
+
+   --animate-pulse:pulse 7s infinite;
+@keyframes pulse{
+    0%{
+        transform: scaleX(1);
+    }
+
+    50%{
+        transform: scale3d(1.05,1.05,1.05);
+    }
+
+    100%{
+        transform: scaleX(1);
+    }
+}
+
 }
 
 @media (prefers-color-scheme: dark) {
