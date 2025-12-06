@@ -7,11 +7,13 @@
   --primary-200: #4CAF50;
   --secondary-100: #E9F8FF;
   --primaryHover:#70a1ff;
+  --skyblue:#f5faff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-skyblue-100: var(--skyblue);
   --color-primary-100: var(--primary-100);
   --color-primary-200: var(--primary-200);
   --color-secondary-100: var(--secondary-100);

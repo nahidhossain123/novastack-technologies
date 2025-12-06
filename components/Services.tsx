@@ -1,10 +1,10 @@
 import React from 'react'
 import ThemeButton from './ui/ThemeButton'
-import { services } from '@/constants/services'
+import { services } from '@/constants'
 
 const Services = () => {
     return (
-        <section className="py-28">
+        <section className="py-10 md:py-28 px-5 md:p-0">
             <div className="container mx-auto space-y-10">
                 <div className='text-center max-w-[600px] mx-auto space-y-6'>
                     <span>Smart Services</span>
@@ -27,7 +27,7 @@ const Services = () => {
                         </div>
                     ))}
                 </div>
-                <div className="alm-btn-wrap" >
+                <div className="flex justify-center" >
                     <ThemeButton
                         style={''}
 
