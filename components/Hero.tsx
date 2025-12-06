@@ -8,13 +8,13 @@ const Hero = () => {
     return (
         <section className="bg-secondary-100 h-screen ">
             <div className='h-full flex justify-center items-center'>
-                <div className="flex items-center container">
-                    <div className="max-w-[650px]">
-                        <div className="space-y-10">
-                            <h1 className='text-primary-200 text-6xl font-bold'>Trusted Effective Service and Solutions</h1>
-                            <h3 className='text-primary-200 text-2xl font-bold'>NovaStack Technologies</h3>
+                <div className="h-full flex flex-wrap md:flex-nowrap justify-end items-center container">
+                    <div className="w-full text-center md:text-start md:max-w-[450px] xl:max-w-[650px]">
+                        <div className="space-y-5 md:space-y-10">
+                            <h1 className='text-primary-200 text-4xl md:text-4xl xl:text-6xl font-bold'>Trusted Effective Service and Solutions</h1>
+                            <h3 className='text-primary-200 text-lg md:text-2xl font-bold'>NovaStack Technologies</h3>
                             <p><a href="/">Dynamic Software Ltd</a> is one of the oldest and best software solution provider in Bangladesh. Dynamic Software Ltd provides all kinds of software solutions all over the country. POS Retails software’s, Vat Management, ERP System, Web application development, Apps Development and much more.</p>
-                            <div className="flex gap-4">
+                            <div className="flex justify-center md:justify-start gap-4">
                                 <ThemeButton
                                     onButtonClick={() => {
                                         router.push('contact')
@@ -34,10 +34,8 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="">
-                        <div className="banner-image animate-pulse">
-                            <img src="https://www.dynamicsoftwareltd.com/wp-content/uploads/2022/12/banner-software-team-image.png" alt="" className="" />
-                        </div>
+                    <div className="flex justify-center animate-pulse">
+                        <img src="https://www.dynamicsoftwareltd.com/wp-content/uploads/2022/12/banner-software-team-image.png" alt="" className=" w-[75%] md:w-full" />
                     </div>
                 </div>
             </div>
