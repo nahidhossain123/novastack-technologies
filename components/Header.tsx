@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram, faPinterest, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
@@ -6,11 +7,12 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 
 const Header = () => {
+    const [isOpenMenu, setIsOpenMenu] = useState(false)
     return (
         <header className=''>
             <div className="bg-primary-200 px-5 py-1">
                 <div className="">
-                    <div className="flex justify-between items-center">
+                    <div className="flex flex-wrap justify-end sm:justify-between items-center">
                         <div className="">
                             <ul className="flex gap-8">
                                 <li>
@@ -42,29 +44,32 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute w-full bg-white px-5 py-2">
+            <div className="absolute w-full bg-primary-100 md:bg-white px-5 py-2">
                 <div className="flex justify-between items-center py-4">
                     <div className="">
-                        <a className="inline-block font-bold hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/">
+                        <a className="inline-block font-extrabold hover:text-hover-100 hover:scale-105 transition-transform duration-200 italic text-white md:text-primary-200" href="/">
                             <span className='font-extrabold'>NovaStack Technologies</span>
                         </a>
                     </div>
-                    <nav id="">
-                        <ul className="flex items-center gap-8">
-                            <li><a className="inline-block font-bold text-primary hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/" aria-current="page">HOME</a></li>
-                            <li><a className="inline-block font-bold text-primary hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/about">ABOUT</a></li>
-                            <li><a className="inline-block font-bold text-primary hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/contact">CONTACT</a></li>
+                    <nav className='fixed left-0 top-[121px] p-5 z-10 w-full h-screen bg-primary-200 md:h-auto md:w-auto md:bg-white md:p-0 md:static transition-all'
+                        style={{
+                            left: isOpenMenu ? '0%' : '-100%'
+                        }}
+                    >
+                        <ul className="flex flex-col md:flex-row md:items-center gap-8">
+                            <li><a className="text-white md:text-black inline-block font-bold text-primary hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/" aria-current="page">HOME</a></li>
+                            <li><a className="text-white md:text-black inline-block font-bold text-primary hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/about">ABOUT</a></li>
+                            <li><a className="text-white md:text-black inline-block font-bold text-primary hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/contact">CONTACT</a></li>
                         </ul>
                     </nav>
-                    <div className="block md:hidden">
-                        <a className="inline-block font-bold hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/">
-                            <span>NovaStack Technologies</span>
-                        </a>
-                    </div>
-                    <div className="block md:hidden">
-                        <span className=""></span>
-                        <span className=""></span>
-                        <span className=""></span>
+                    <div
+                        onClick={() => {
+                            setIsOpenMenu(prevState => !prevState)
+                        }}
+                        className="block md:hidden space-y-1">
+                        <span className={`block w-8 h-1 bg-white rounded-md transition-all ${isOpenMenu ? "translate-y-2 rotate-45" : ''}`}></span>
+                        <span className={`block w-8 h-1 bg-white rounded-md transition-all ${isOpenMenu ? "-translate-x-20 opacity-0" : ''}`}></span>
+                        <span className={`block w-8 h-1 bg-white rounded-md transition-all ${isOpenMenu ? "-translate-y-2 -rotate-45" : ''}`}></span>
                     </div>
                 </div>
             </div>
