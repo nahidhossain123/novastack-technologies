@@ -1,3 +1,4 @@
+import CompanyOverview from '@/components/CompanyOverview'
 import HeroSection from '@/components/HeroSection'
 import React from 'react'
 
@@ -17,6 +18,7 @@ const page = () => {
                     </div>
                 </div>
             </HeroSection>
+            <CompanyOverview />
         </div>
     )
 }
