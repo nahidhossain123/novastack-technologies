@@ -3,11 +3,14 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram, faPinterest, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { usePathname } from 'next/navigation'
 
 
 
 const Header = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(false)
+    const pathName = usePathname();
+    console.log('Pathname', pathName)
     return (
         <header className=''>
             <div className="bg-primary-200 px-5 py-1">
@@ -57,9 +60,9 @@ const Header = () => {
                         }}
                     >
                         <ul className="flex flex-col md:flex-row md:items-center gap-8">
-                            <li><a className="text-white md:text-black inline-block font-bold text-primary hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/" aria-current="page">HOME</a></li>
-                            <li><a className="text-white md:text-black inline-block font-bold text-primary hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/about">ABOUT</a></li>
-                            <li><a className="text-white md:text-black inline-block font-bold text-primary hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/contact">CONTACT</a></li>
+                            <li><a className={`inline-block font-bold text-primary hover:text-hover-100 hover:scale-105 transition-transform duration-200 ${pathName === '/' ? 'text-white md:text-primary-200' : 'text-black'}`} href="/" aria-current="page">HOME</a></li>
+                            <li><a className={` inline-block font-bold text-primary hover:text-hover-100 hover:scale-105 transition-transform duration-200 ${pathName === '/about' ? 'text-white md:text-primary-200' : 'text-black'}`} href="/about">ABOUT</a></li>
+                            <li><a className={`inline-block font-bold text-primary hover:text-hover-100 hover:scale-105 transition-transform duration-200 ${pathName === '/contact' ? 'text-white md:text-primary-200' : 'text-black'}`} href="/contact">CONTACT</a></li>
                         </ul>
                     </nav>
                     <div
