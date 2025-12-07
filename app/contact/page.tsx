@@ -1,3 +1,4 @@
+import ContactForm from '@/components/ContactForm'
 import ContactInfo from '@/components/ContactInfo'
 import HeroSection from '@/components/HeroSection'
 import React from 'react'
@@ -19,6 +20,7 @@ const page = () => {
                 </div>
             </HeroSection>
             <ContactInfo />
+            <ContactForm />
         </div>
     )
 }
