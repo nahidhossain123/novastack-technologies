@@ -15,7 +15,7 @@ const Services = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {services.map((service) => (
                         <div
-                            key={service.id}
+                            key={service.id.toString()}
                             className="flex flex-col items-center justify-center px-6 py-24 rounded-lg shadow-md hover:shadow-xl transition duration-300 bg-white text-center space-y-5" // Added 'relative' for positioning the delete button
                         >
                             <span className="text-3xl block mb-2">{service.icon}</span>

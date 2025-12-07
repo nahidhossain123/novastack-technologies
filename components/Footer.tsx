@@ -58,7 +58,7 @@ const Footer = () => {
                             '
                             >Our Service</h3>
                             <ul className="space-y-3">
-                                {services.map(service => (<li><a href={`/${service.title}`}>{service.title}</a></li>))}
+                                {services.map(service => (<li key={service.id.toString()}><a href={`/${service.title}`}>{service.title}</a></li>))}
                             </ul>
                         </div>
                     </div>
