@@ -2,8 +2,9 @@
 import React from 'react'
 import ThemeButton from './ui/ThemeButton'
 import { useRouter } from 'next/navigation';
+import { HeroSectionTypes } from '@/types';
 
-const HeroSection = ({ children }) => {
+const HeroSection = ({ children }: HeroSectionTypes) => {
     const router = useRouter();
     return (
         <section className="bg-secondary-100 h-full relative">

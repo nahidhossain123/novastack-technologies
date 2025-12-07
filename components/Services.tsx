@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import ThemeButton from './ui/ThemeButton'
 import { services } from '@/constants'
@@ -29,7 +30,9 @@ const Services = () => {
                 </div>
                 <div className="flex justify-center" >
                     <ThemeButton
-                        style={''}
+                        onButtonClick={() => {
+                            //call api to load more services
+                        }}
 
                     >Load More
                     </ThemeButton>

@@ -1,6 +1,7 @@
+import { ThemeButtonTypes } from '@/types'
 import React from 'react'
 
-const ThemeButton = ({ children, onButtonClick, style }) => {
+const ThemeButton = ({ children, onButtonClick, style }: ThemeButtonTypes) => {
     return (
         <button
             onClick={onButtonClick}

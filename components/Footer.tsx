@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import NewsLetterFomr from './ui/NewsLetterForm'
 import NewsLetterForm from './ui/NewsLetterForm'
+import { services } from '@/constants'
 
 const Footer = () => {
     return (
@@ -13,9 +14,9 @@ const Footer = () => {
                     <div className="md:col-span-2">
                         <div className="space-y-5">
                             <a className="inline-block font-bold hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/">
-                                <span className='font-extrabold text-2xl'>NovaStack Technologies</span>
+                                <span className='font-extrabold text-4xl'>NovaStack</span>
                             </a>
-                            <p>Providing the simplest solution for the most complex problem.</p>
+                            <p>NovaStack Technologies is a forward-thinking tech company specializing in innovative digital solutions that empower businesses to grow, scale, and thrive in an ever-changing technological landscape.</p>
                             <h4 className="text-2xl font-bold">Join Newsletter</h4>
                             <NewsLetterForm />
                             <ul className="flex gap-4">
@@ -38,12 +39,7 @@ const Footer = () => {
                         <div className="space-y-5">
                             <h3 className='text-2xl font-bold'>Our Service</h3>
                             <ul className="space-y-3">
-                                <li><a href="/service1">Service 1</a></li>
-                                <li><a href="/service1">Service 2</a></li>
-                                <li><a href="/service1">Service 3</a></li>
-                                <li><a href="/service1">Service 4</a></li>
-                                <li><a href="/service1">Service 5</a></li>
-                                <li><a href="/service1">Service 6</a></li>
+                                {services.map(service => (<li><a href={`/${service.title}`}>{service.title}</a></li>))}
                             </ul>
                         </div>
                     </div>

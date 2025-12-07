@@ -1,7 +1,10 @@
+'use client'
 import React from 'react'
 import ThemeButton from './ui/ThemeButton'
+import { useRouter } from 'next/navigation'
 
 const CompanyOverview = () => {
+    const router = useRouter()
     return (
         <section className="p-5 md:p-0 py-10 md:py-28">
             <div className="container mx-auto space-y-10">
@@ -56,8 +59,9 @@ const CompanyOverview = () => {
                 </div>
                 <div className="" >
                     <ThemeButton
-                        style={''}
-
+                        onButtonClick={() => {
+                            router.push('/contact')
+                        }}
                     >
                         Contact Us
                     </ThemeButton>
