@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
                     <div className="md:col-span-2">
                         <div className="space-y-5">
-                            <a className="inline-block font-bold hover:text-hover-100 hover:scale-105 transition-transform duration-200" href="/">
+                            <a className="inline-block font-bold hover:scale-105 transition-transform duration-200" href="/">
                                 <span className='font-extrabold text-4xl'>NovaStack</span>
                             </a>
                             <p>NovaStack Technologies is a forward-thinking tech company specializing in innovative digital solutions that empower businesses to grow, scale, and thrive in an ever-changing technological landscape.</p>

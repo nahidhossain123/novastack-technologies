@@ -7,7 +7,7 @@ import { HeroSectionTypes } from '@/types';
 const HeroSection = ({ children }: HeroSectionTypes) => {
     const router = useRouter();
     return (
-        <section className="bg-secondary-100 h-full relative">
+        <section className="bg-secondary-100 h-full relative overflow-hidden">
             <div className='h-full flex justify-center items-center'>
                 {children}
             </div>
