@@ -15,7 +15,7 @@ const HeroSection = ({ children }: HeroSectionTypes) => {
                 <div className="absolute animate-move top-[50%] left-[0%]">
                     <img src="/shapes/shape1.png" alt="shape" />
                 </div>
-                <div className="absolute top-[15%] left-[5%] animate-pulse">
+                <div className="absolute top-[10%] left-[4%] animate-pulse w-10 h-10 md:w-full md:h-full">
                     <img src="/shapes/shape2.png" alt="shape" />
                 </div>
                 <div className="absolute animate-spin bottom-[10%] left-[40%]">
