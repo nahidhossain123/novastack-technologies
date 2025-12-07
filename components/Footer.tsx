@@ -36,16 +36,54 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="md:col-span-1">
-                        <div className="space-y-5">
-                            <h3 className='text-2xl font-bold'>Our Service</h3>
+                        <div className="space-y-5 px-5">
+                            <h3
+                                className='
+                            text-2xl 
+                            font-bold
+                            before:content[""]
+                            before:h-10
+                            before:w-1
+                            before:bg-[#e6335a]
+                            before:left-[-30]
+                            before:absolute
+                            before:content[""]
+                            after:h-2
+                            after:w-1
+                            after:bg-primary-200
+                            after:left-[-30]
+                            after:absolute
+                            after:animate-line
+                            relative
+                            '
+                            >Our Service</h3>
                             <ul className="space-y-3">
                                 {services.map(service => (<li><a href={`/${service.title}`}>{service.title}</a></li>))}
                             </ul>
                         </div>
                     </div>
                     <div className="md:col-span-1">
-                        <div className="space-y-5">
-                            <h3 className='text-2xl font-bold'>Quick Links</h3>
+                        <div className="space-y-5 px-5">
+                            <h3
+                                className='
+                            text-2xl 
+                            font-bold
+                            before:content[""]
+                            before:h-10
+                            before:w-1
+                            before:bg-[#e6335a]
+                            before:left-[-30]
+                            before:absolute
+                            before:content[""]
+                            after:h-2
+                            after:w-1
+                            after:bg-primary-200
+                            after:left-[-30]
+                            after:absolute
+                            after:animate-line
+                            relative
+                            '
+                            >Quick Links</h3>
                             <ul className="space-y-3">
                                 <li><a href="/service1">Home</a></li>
                                 <li><a href="/service1">About</a></li>
@@ -55,8 +93,27 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="md:col-span-1">
-                        <div className="space-y-5">
-                            <h3 className='text-2xl font-bold'>Contacts</h3>
+                        <div className="space-y-5 px-5">
+                            <h3
+                                className='
+                            text-2xl 
+                            font-bold
+                            before:content[""]
+                            before:h-10
+                            before:w-1
+                            before:bg-[#e6335a]
+                            before:left-[-30]
+                            before:absolute
+                            before:content[""]
+                            after:h-2
+                            after:w-1
+                            after:bg-primary-200
+                            after:left-[-30]
+                            after:absolute
+                            after:animate-line
+                            relative
+                            '
+                            >Contacts</h3>
                             <ul className="space-y-3">
                                 <li>
                                     <a className='flex items-start gap-3' href="mailto:novastack@technology.com">
