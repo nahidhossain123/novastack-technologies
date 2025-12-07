@@ -16,15 +16,16 @@ const Services = () => {
                     {services.map((service) => (
                         <div
                             key={service.id}
-                            className="p-6 border rounded-lg shadow-md hover:shadow-xl transition duration-300 bg-white relative" // Added 'relative' for positioning the delete button
+                            className="flex flex-col items-center justify-center px-6 py-24 rounded-lg shadow-md hover:shadow-xl transition duration-300 bg-white text-center space-y-5" // Added 'relative' for positioning the delete button
                         >
                             <span className="text-3xl block mb-2">{service.icon}</span>
-                            <h3 className="text-xl font-semibold text-indigo-600 mb-2">
+                            <h3 className="text-xl font-semibold text-primary-200 mb-2">
                                 {service.title}
                             </h3>
                             <p className="text-gray-600">
                                 {service.description}
                             </p>
+                            <a href='/' className='font-bold'>Know More</a>
                         </div>
                     ))}
                 </div>
