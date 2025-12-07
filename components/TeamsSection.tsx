@@ -28,18 +28,18 @@ const TeamsSection = () => {
 
                         768: {
                             slidesPerView: 2,
-                            spaceBetween: 40,
+                            spaceBetween: 30,
                         },
                         1024: {
                             slidesPerView: 3,
-                            spaceBetween: 50,
+                            spaceBetween: 20,
                         },
                     }}
                     className="mySwiper pt-10 pb-16"
                 >
                     {teamMembers.map((member) => (
                         <SwiperSlide key={member.id}>
-                            <div key={member.id} className="flex flex-col items-center text-center">
+                            <div key={member.id} className="flex flex-col items-center text-center shadow-md m-10 rounded-2xl">
 
                                 {/* Image */}
                                 <img
@@ -54,7 +54,7 @@ const TeamsSection = () => {
                                 </h3>
 
                                 {/* Title */}
-                                <p className="text-indigo-600 font-medium">
+                                <p className="text-primary-200 font-medium">
                                     {member.title}
                                 </p>
 

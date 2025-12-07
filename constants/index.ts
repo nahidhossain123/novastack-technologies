@@ -100,3 +100,33 @@ export const teamMembers = [
         linkedin: "#"
     },
 ];
+export const helpList = [
+    { 
+        id: 1, 
+        name: "Anya Sharma", 
+        title: "Chief Executive Officer", 
+        image: "/media/telephone-call.png",
+        linkedin: "#"
+    },
+    { 
+        id: 2, 
+        name: "Michael Chen", 
+        title: "Lead Software Architect", 
+        image: "/media/whatsapp.png",
+        linkedin: "#"
+    },
+    { 
+        id: 3, 
+        name: "David Rodriguez", 
+        title: "Head of Design (UX/UI)", 
+        image: "/media/smile.png",
+        linkedin: "#"
+    },
+    { 
+        id: 4, 
+        name: "Priya Singh", 
+        title: "Marketing Director", 
+        image: "/media/live-chat.png",
+        linkedin: "#"
+    },
+];

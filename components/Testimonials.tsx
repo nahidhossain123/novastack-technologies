@@ -31,38 +31,32 @@ const Testimonials = () => {
                             slidesPerView: 2,
                             spaceBetween: 40,
                         },
-                        1024: {
-                            slidesPerView: 3,
-                            spaceBetween: 50,
-                        },
                     }}
                     className="mySwiper pt-10 pb-16"
                 >
                     {testimonials.map((testimonial) => (
                         <SwiperSlide key={testimonial.id}>
-                            <div className="flex flex-col h-full bg-gray-50 p-6 rounded-xl shadow-lg border-t-4 border-indigo-600">
-
-                                {/* Quote */}
+                            <div className="flex flex-col justify-center items-center h-full bg-white rounded-md p-10 relative my-10 text-center">
+                                <div className='absolute -top-5 border border-primary-200 rounded-md'>
+                                    <img
+                                        className="h-12 w-12 rounded-md object-cover"
+                                        src={testimonial.avatar}
+                                        alt={`Avatar of ${testimonial.name}`}
+                                    />
+                                </div>
                                 <p className="flex-grow text-lg italic text-gray-700 leading-relaxed mb-6">
                                     "{testimonial.quote}"
                                 </p>
 
-                                {/* Footer/Author */}
-                                <div className="flex items-center mt-auto">
-                                    <img
-                                        className="h-12 w-12 rounded-full object-cover mr-4"
-                                        src={testimonial.avatar}
-                                        alt={`Avatar of ${testimonial.name}`}
-                                    />
-                                    <div>
-                                        <p className="text-lg font-semibold text-gray-900">
-                                            {testimonial.name}
-                                        </p>
-                                        <p className="text-sm text-indigo-600">
-                                            {testimonial.title}
-                                        </p>
-                                    </div>
+                                <div>
+                                    <p className="text-lg font-semibold text-gray-900">
+                                        {testimonial.name}
+                                    </p>
+                                    <p className="text-sm text-primary-100">
+                                        {testimonial.title}
+                                    </p>
                                 </div>
+
                             </div>
                         </SwiperSlide>
                     ))}
